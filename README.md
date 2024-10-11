@@ -21,6 +21,14 @@ gunzip *.gz
 ### 2. Download reference genes using gene list generated from KEGG pathway
 
 Done using [`get_pathway_genes.py`](https://github.com/Kamouyiaraki/UCPCet/blob/main/scripts/get_pathway_genes.py) with [`thermogenesis_kegg_hsa_genecodes.tsv`](https://github.com/Kamouyiaraki/UCPCet/blob/main/downloads/thermogenesis_kegg_hsa_genecodes.tsv)
+
+*Note:* 
+*The structure to define whether retrieving nt sequences or aa is:* 
+```
+-f -n a hsa:<geneID> #for AA seq
+-f -n n hsa:<geneID> #for nt seq
+```
+
  
 ### 3. Exonerate reference genes for each genome
 
