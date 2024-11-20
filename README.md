@@ -32,7 +32,7 @@ Done using [`get_pathway_genes.py`](https://github.com/Kamouyiaraki/UCPCet/blob/
  
 ### 3. Exonerate reference genes for each genome
 
-Run exonerate for all genes x all genomes using [`exonerate_parallel.py`](https://github.com/Kamouyiaraki/UCPCet/blob/main/scripts/exonerate_parallel.py)
+Run exonerate for all genes (240) for all genomes (72) using [`exonerate_parallel.py`](https://github.com/Kamouyiaraki/UCPCet/blob/main/scripts/exonerate_parallel.py)
 
 ### 4. Prepare exonerate output for next steps
 - Turn output into FASTA format [`exonerate2fasta.sh`](https://github.com/Kamouyiaraki/UCPCet/blob/main/scripts/exonerate2fasta.sh)
