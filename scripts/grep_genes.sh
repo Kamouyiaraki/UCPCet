@@ -9,7 +9,7 @@ do
     prefix="${input1_name%%.*}"
     
     # Find matching files using the full path and prefix
-    matching_files=$(ls /home/mkamouyi/scratch/private/cetaceans/exonerate_out/"${prefix}"*_max.fas 2>/dev/null)
+    matching_files=$(ls /home/mkamouyi/scratch/private/cetaceans/cleaned_exonerate_out/"${prefix}"*_max.fas 2>/dev/null)
     
     if [ -n "$matching_files" ]; then
         grep -h "" $matching_files > "/home/mkamouyi/scratch/private/cetaceans/alignment_files/${prefix}.fas"
