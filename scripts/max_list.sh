@@ -30,3 +30,4 @@ mkdir cleaned_exonerate_out
 mv exonerate_out/max.out ./cleaned_exonerate_out/
 mv exonerate_out/list_of_headers.txt ./cleaned_exonerate_out/
 mv exonerate_out/*_SL.fas ./cleaned_exonerate_out/
+mv exonerate_out/*_max.fas ./cleaned_exonerate_out/
