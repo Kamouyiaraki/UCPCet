@@ -37,7 +37,14 @@ Run exonerate for all genes (240) for all genomes (72) using [`exonerate_paralle
 ### 4. Prepare exonerate output for next steps
 - Turn output into FASTA format [`exonerate2fasta.sh`](https://github.com/Kamouyiaraki/UCPCet/blob/main/scripts/exonerate2fasta.sh)
 - filter to keep top hit [`max_list.sh`](https://github.com/Kamouyiaraki/UCPCet/blob/main/scripts/max_list.sh) 
-- merge hits to output a single FASTA per gene for downstream alignment [`grep_genes.sh`]()
+- merge hits to output a single FASTA per gene for downstream alignment [`grep_genes.sh`](https://github.com/Kamouyiaraki/UCPCet/blob/main/scripts/grep_genes.sh)
 
-### 5. Align genes using MACSE
-`initial_alignment.sh`
+### 5. Align gene files using MACSE v2.07
+
+- The [latest release of MACSE](https://www.agap-ge2pop.org/macsee-pipelines/) was downloaded directly into the working directory:
+
+```
+wget https://www.agap-ge2pop.org/wp-content/uploads/macse/releases/macse_v2.07.jar
+```
+
+- [`macse_alignment.py`](https://github.com/Kamouyiaraki/UCPCet/blob/main/scripts/macse_alignment.py) was run on all gene files, where the input required is the directory where all the sequence files are kept (`seq_dir`) and the location of the MACSE `.jar` file. 
